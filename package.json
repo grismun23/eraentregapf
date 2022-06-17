@@ -1,0 +1,15 @@
+{
+  "name": "3era-entrega-proyecto-final",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass-watch-dev": "sass --watch -c --style=expanded --no-source-map estilos.scss:estilos.css",
+    "sass-compile-dev": "sass -c --style=expanded --no-source-map estilos.scss:estilos.css",
+    "sass-compile-prod": "sass -c --style=compressed estilos.scss:estilos.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

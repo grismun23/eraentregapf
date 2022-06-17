@@ -1,0 +1,209 @@
+.navbar{
+    background-color: #F28775;
+//colores 
+@mixin jumbotronsize ($width, $height,$margin-bottom)  {
+    height: $height;
+    width: $width;
+    margin-bottom: $margin-bottom;
+}
+.jumbotron{
+    @include jumbotronsize(550px,100%,0px )
+}
+    
+}
+.jumbotron{
+background-image: url(./images/ima_portada.jpg);
+background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    height: 80vh;
+    border-radius: 0px;
+    margin-bottom: 0;
+    .jumbotron p{
+        font-size: 24px;
+        color: #F9F6E4;
+        animation-direction:initial;
+        animation-duration: 3s;
+    }
+}
+h2{
+    text-align: center;
+    background-color: #F9D9C0;
+    color: #F28775;
+    padding: 10px;
+    margin-bottom: 0;
+    animation-name: example;
+    animation-duration: 4s;
+}
+@keyframes example {
+  from {background-color: rgb(255, 255, 255);}
+  to {background-color: #F9D9C0;}
+}
+.aboutme{
+    height: 800px;
+    width: 100%;
+    background: #F28775;
+    margin-bottom: 0;
+    margin-top: 0;
+    animation-fill-mode: both;
+}
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px
+);
+.row{
+    height: 800px;
+}
+.afoto{
+background-image: url(/images/Foto\ ilse.jpg);
+background-size: cover;
+height: 100%;
+}
+@media only screen and (min-width: 320px) and (max-width: 576px) {
+    .atexto {
+    height:fit-content;
+    }
+}
+.atexto{
+    text-align: center;
+    color: #F9F6E4;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.carousel-inner{
+    position: center;
+    padding: 40px;
+    text-align: center;
+    @extend .atexto
+}
+.footer{
+    height: 100px;
+    background-color: #F28775;
+    width: 100%;
+    margin-bottom: 0;
+    text-align: center;
+    color: #ffffff;
+}
+//podcast page
+.jumbotronpod{
+    background-image: url(./images/podcast.png);
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    height: 80vh;
+    border-radius: 0px;
+    margin-bottom: 0;
+}
+.jumbotronpod h1{
+    width: 55%;
+    margin-left: 20px;
+    margin-top: 0;
+    color: #EAE48F;
+    padding-top: 20px;
+}
+.jumbotronpod p{
+    font-size: 20px;
+    color: #F28775;
+    animation-direction:initial;
+    animation-duration: 3s;
+    padding-left: 20px;
+    padding-right: 600px;
+}
+//Recursos page 
+.jumbotronrec{
+    background-image: url(/images/arnel-hasanovic-MNd-Rka1o0Q-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    height: 80vh;
+    border-radius: 0px;
+    margin-bottom: 0;
+    text-align: right;
+}
+.jumbotronrec h1{
+    width: 55%;
+    margin-left: 590px;
+    margin-top: 0;
+    color: #EAE48F;
+    padding-top: 20px;
+    padding-right: 10px;
+}
+.jumbotronrec p{
+    font-size: 20px;
+    color: #F28775;
+    animation-direction:initial;
+    animation-duration: 3s;
+    padding-left: 800px;
+    padding-right: 30px;
+}
+//mis favoritos page 
+.jumbotronmis{
+    background-image: url(/images/stock-photo-pleased-student-denim-shirt-books\ \(1\).jpg);
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    height: 80vh;
+    border-radius: 0px;
+    margin-bottom: 0;
+}
+.jumbotronmis h1{
+    width: 55%;
+    margin-left: 20px;
+    margin-top: 0;
+    color: #EAE48F;
+    padding-top: 20px;
+}
+.jumbotronmis p{
+    font-size: 20px;
+    color: #ffffff;
+    animation-direction:initial;
+    animation-duration: 3s;
+    padding-left: 20px;
+    padding-right: 600px;
+}
+//contacto page
+.jumbotronconta{
+    background-image: url(/images/stock-photo-pleased-student-denim-shirt-books\ \(1\).jpg);
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    height: 80vh;
+    border-radius: 0px;
+    margin-bottom: 0;
+}
+.jumbotronconta h1{
+    width: 55%;
+    margin-left: 20px;
+    margin-top: 0;
+    color: #EAE48F;
+    padding-top: 20px;
+}
+.jumbotronconta p{
+    font-size: 20px;
+    color: #ffffff;
+    animation-direction:initial;
+    animation-duration: 3s;
+    padding-left: 20px;
+    padding-right: 600px;
+}
+.form-group{
+    padding-left: 400px;
+    padding-right: 400px;
+    align-items: center;
+}
+.btn{
+    padding-left: 200px;
+    padding-right: 270px;
+    margin-left: 400px;
+    background-color: #EAE48F;
+    border: radius 30px;
+    margin-bottom: 10px;
+}
+
+
+
