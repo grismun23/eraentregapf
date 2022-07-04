@@ -19,18 +19,31 @@
 .jumbotron .jumbotron p {
   font-size: 24px;
   color: #F9F6E4;
-  animation-direction: initial;
-  animation-duration: 3s;
+  -webkit-animation-direction: initial;
+          animation-direction: initial;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
 }
 
 h2 {
   text-align: center;
-  background-color: #F9D9C0;
-  color: #F28775;
+  background-color: #F28775;
+  color: #F9D9C0;
   padding: 10px;
   margin-bottom: 0;
-  animation-name: example;
-  animation-duration: 4s;
+  -webkit-animation-name: example;
+          animation-name: example;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+}
+
+@-webkit-keyframes example {
+  from {
+    background-color: rgb(255, 255, 255);
+  }
+  to {
+    background-color: #F9D9C0;
+  }
 }
 
 @keyframes example {
@@ -42,42 +55,73 @@ h2 {
   }
 }
 .aboutme {
-  height: 800px;
+  height: 600px;
   width: 100%;
-  background: #F28775;
+  background: #F9D9C0;
   margin-bottom: 0;
   margin-top: 0;
-  animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }
 
-.row {
-  height: 800px;
+.sec1 {
+  height: 600px;
+  width: 100%;
 }
 
 .afoto {
-  background-image: url(/images/Foto\ ilse.jpg);
+  background-image: url(/images/imagen\ home.png);
   background-size: cover;
   height: 100%;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 576px) {
   .atexto, .carousel-inner {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
   }
 }
 .atexto, .carousel-inner {
   text-align: center;
-  color: #F9F6E4;
-  font-size: 20px;
-  padding-top: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
+  color: #F28775;
+  padding-top: 15px;
+  margin-bottom: 0;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+  height: 100%;
+  line-height: 1.5rem;
+}
+.atexto p, .carousel-inner p {
+  text-align: justify;
+  font-size: 16px;
 }
 
 .carousel-inner {
   position: center;
   padding: 40px;
   text-align: center;
+}
+
+.contenedorcta {
+  height: 400px;
+}
+
+.sec2 {
+  height: 400px;
+}
+
+.fotosec2 {
+  background-image: url(/images/arnel-hasanovic-MNd-Rka1o0Q-unsplash.jpg);
+  background-size: cover;
+}
+
+.btn1 {
+  background-color: #F28775;
+  color: #EAE48F;
+  border-radius: 10px;
+  width: 90px;
+  height: 40px;
 }
 
 .footer {
@@ -110,8 +154,10 @@ h2 {
 .jumbotronpod p {
   font-size: 20px;
   color: #F28775;
-  animation-direction: initial;
-  animation-duration: 3s;
+  -webkit-animation-direction: initial;
+          animation-direction: initial;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
   padding-left: 20px;
   padding-right: 600px;
 }
@@ -139,8 +185,10 @@ h2 {
 .jumbotronrec p {
   font-size: 20px;
   color: #F28775;
-  animation-direction: initial;
-  animation-duration: 3s;
+  -webkit-animation-direction: initial;
+          animation-direction: initial;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
   padding-left: 800px;
   padding-right: 30px;
 }
@@ -166,8 +214,10 @@ h2 {
 .jumbotronmis p {
   font-size: 20px;
   color: #ffffff;
-  animation-direction: initial;
-  animation-duration: 3s;
+  -webkit-animation-direction: initial;
+          animation-direction: initial;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
   padding-left: 20px;
   padding-right: 600px;
 }
@@ -193,8 +243,10 @@ h2 {
 .jumbotronconta p {
   font-size: 20px;
   color: #ffffff;
-  animation-direction: initial;
-  animation-duration: 3s;
+  -webkit-animation-direction: initial;
+          animation-direction: initial;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
   padding-left: 20px;
   padding-right: 600px;
 }
@@ -209,9 +261,7 @@ h2 {
   padding-left: 200px;
   padding-right: 270px;
   margin-left: 400px;
-  background-color: #EAE48F;
+  background-color: #F28775;
   border: radius 30px;
   margin-bottom: 10px;
-}
-
-/*# sourceMappingURL=estilos.css.map */
+}/*# sourceMappingURL=estilos.css.map */

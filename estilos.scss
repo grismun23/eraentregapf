@@ -28,8 +28,8 @@ background-size: cover;
 }
 h2{
     text-align: center;
-    background-color: #F9D9C0;
-    color: #F28775;
+    background-color: #F28775 ;
+    color: #F9D9C0;
     padding: 10px;
     margin-bottom: 0;
     animation-name: example;
@@ -40,9 +40,9 @@ h2{
   to {background-color: #F9D9C0;}
 }
 .aboutme{
-    height: 800px;
+    height: 600px;
     width: 100%;
-    background: #F28775;
+    background: #F9D9C0;
     margin-bottom: 0;
     margin-top: 0;
     animation-fill-mode: both;
@@ -54,11 +54,12 @@ $container-max-widths: (
   xl: 1140px,
   xxl: 1320px
 );
-.row{
-    height: 800px;
+.sec1{
+    height: 600px;
+    width: 100%;
 }
 .afoto{
-background-image: url(/images/Foto\ ilse.jpg);
+background-image: url(/images/imagen\ home.png);
 background-size: cover;
 height: 100%;
 }
@@ -69,11 +70,17 @@ height: 100%;
 }
 .atexto{
     text-align: center;
-    color: #F9F6E4;
-    font-size: 20px;
-    padding-top: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
+    color: #F28775;
+    padding-top: 15px;
+    margin-bottom: 0;
+    margin-inline-end: 0px;
+    height: 100%;
+    line-height: 1.5rem;
+    p{
+        text-align: justify;
+        font-size: 16px;
+
+    }
 }
 .carousel-inner{
     position: center;
@@ -81,6 +88,26 @@ height: 100%;
     text-align: center;
     @extend .atexto
 }
+.contenedorcta{
+    height: 400px;
+}
+.sec2{
+    height: 400px;
+}
+.fotosec2{
+    background-image: url(/images/arnel-hasanovic-MNd-Rka1o0Q-unsplash.jpg);
+    background-size: cover;
+}
+.btn1{
+    background-color: #F28775;
+    color: #EAE48F;
+    border-radius: 10px;
+    width: 90px;
+    height: 40px;
+    $color-hover: color-contrast($color),
+
+}
+
 .footer{
     height: 100px;
     background-color: #F28775;
@@ -200,10 +227,11 @@ height: 100%;
     padding-left: 200px;
     padding-right: 270px;
     margin-left: 400px;
-    background-color: #EAE48F;
+    background-color: #F28775;
     border: radius 30px;
     margin-bottom: 10px;
 }
+
 
 
 
