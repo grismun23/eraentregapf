@@ -65,23 +65,16 @@ h2 {
 }
 
 .sec1 {
-  height: 600px;
+  height: 800px;
   width: 100%;
 }
 
 .afoto {
   background-image: url(/images/imagen\ home.png);
   background-size: cover;
-  height: 100%;
+  height: 600px;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 576px) {
-  .atexto, .carousel-inner {
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-  }
-}
 .atexto, .carousel-inner {
   text-align: center;
   color: #F28775;
@@ -104,16 +97,36 @@ h2 {
 }
 
 .contenedorcta {
-  height: 400px;
+  height: 100%;
+  box-sizing: inherit;
+  display: inline-block;
+  float: none;
+}
+.contenedorcta p {
+  display: block;
+  -webkit-margin-before: 1em;
+          margin-block-start: 1em;
+  -webkit-margin-after: 1em;
+          margin-block-end: 1em;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+  text-rendering: optimizeLegibility;
 }
 
 .sec2 {
   height: 400px;
 }
 
+.textsec2 {
+  height: 100%;
+}
+
 .fotosec2 {
   background-image: url(/images/arnel-hasanovic-MNd-Rka1o0Q-unsplash.jpg);
   background-size: cover;
+  height: 100%;
 }
 
 .btn1 {
@@ -134,7 +147,7 @@ h2 {
 }
 
 .jumbotronpod {
-  background-image: url(./images/podcast.png);
+  background-image: url(https://images.unsplash.com/photo-1554200876-907f9286c2a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
   background-size: cover;
   background-position: center;
   color: #ffffff;
@@ -147,8 +160,9 @@ h2 {
   width: 55%;
   margin-left: 20px;
   margin-top: 0;
-  color: #EAE48F;
+  color: #ffffff;
   padding-top: 20px;
+  display: grid;
 }
 
 .jumbotronpod p {
@@ -159,7 +173,128 @@ h2 {
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
   padding-left: 20px;
-  padding-right: 600px;
+  padding-right: 20%;
+  display: block;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.btn {
+  background-color: white;
+  border: 1px solid #F7C289;
+  color: gray-dark;
+  padding: 0.5rem;
+  text-transform: lowercase;
+}
+
+.btn--block {
+  display: block;
+  width: 100%;
+  background-color: #F9D9C0;
+  border: 1.5px solid rgb(218, 212, 212);
+  border-radius: 20px;
+  height: 30px;
+  color: #ffffff;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 50px;
+  padding: 0;
+}
+
+.cards__item {
+  display: flex;
+  padding: 1rem;
+}
+@media (min-width: 40rem) {
+  .cards__item {
+    width: 50%;
+  }
+}
+@media (min-width: 56rem) {
+  .cards__item {
+    width: 33.3333%;
+  }
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.card:hover .card__image {
+  filter: contrast(100%);
+}
+
+.card__content {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.card__image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  filter: contrast(70%);
+  overflow: hidden;
+  position: relative;
+  transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
+}
+.card__image::before {
+  content: "";
+  display: block;
+  padding-top: 56.25%;
+}
+@media (min-width: 40rem) {
+  .card__image::before {
+    padding-top: 66.6%;
+  }
+}
+
+.card__image--flowers {
+  background-image: url(https://images.unsplash.com/photo-1607457561901-e6ec3a6d16cf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);
+}
+
+.card__image--river {
+  background-image: url(https://we-care.mx/blog/wp-content/uploads/customer-experience-tere-lucio-830x830.jpg);
+  background-position: bottom;
+}
+
+.card__image--record {
+  background-image: url(https://m.media-amazon.com/images/S/dmp-catalog-images-prod/images/94685bf5-7363-4a61-8999-1777aaf4809e/94685bf5-7363-4a61-8999-1777aaf4809e-2142547557._SX576_SY576_BL0_QL100__UXNaN_FMjpg_QL85_.jpg);
+}
+
+.card__image--fence {
+  background-image: url(https://www.hola.com/us/imagenes/es/lifestyle/2019082027179/mia-astral-astrologia-horoscopo-entrevista/0-198-815/Mia-Astral-headshot-t.jpg);
+}
+
+.card__title {
+  color: gray-dark;
+  font-size: 1.25rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.card__text {
+  flex: 1 1 auto;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
 }
 
 .jumbotronrec {
